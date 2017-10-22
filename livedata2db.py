@@ -1,4 +1,4 @@
-
+#!/usr/bin/python
 """
 Queries some API endpoints for the most important data and saves it to a sqlite database
 for easy access. Should be run regularly, e.g. every 5 minutes.
@@ -47,7 +47,7 @@ data['powerflow_E_Year'] = powerflow_data['Body']['Data']['Site']['E_Year']
 data['powerflow_E_Total'] = powerflow_data['Body']['Data']['Site']['E_Total']
 
 print(time.time()-starttime)
-
+print data
 # meter
 starttime = time.time()
 
